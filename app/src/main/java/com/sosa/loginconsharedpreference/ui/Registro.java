@@ -1,4 +1,4 @@
-package com.sosa.loginconsharedpreference;
+package com.sosa.loginconsharedpreference.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.sosa.loginconsharedpreference.R;
+import com.sosa.loginconsharedpreference.entidades.Usuario;
 
 public class Registro extends AppCompatActivity {
 

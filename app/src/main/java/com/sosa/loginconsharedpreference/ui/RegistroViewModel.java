@@ -1,4 +1,4 @@
-package com.sosa.loginconsharedpreference;
+package com.sosa.loginconsharedpreference.ui;
 
 import android.app.Application;
 import android.content.Context;
@@ -10,7 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
+
+import com.sosa.loginconsharedpreference.MainActivity;
+import com.sosa.loginconsharedpreference.entidades.Usuario;
+import com.sosa.loginconsharedpreference.request.ApiClient;
 
 public class RegistroViewModel extends AndroidViewModel {
     private Context context;
@@ -52,7 +55,7 @@ public class RegistroViewModel extends AndroidViewModel {
             ApiClient.guardar(context, u);
 
             Intent intent = new Intent(context, MainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_TASK_ON_HOME);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             Toast.makeText(context, "Usuario registrado", Toast.LENGTH_SHORT).show();
             context.startActivity(intent);
 
@@ -65,7 +68,7 @@ public class RegistroViewModel extends AndroidViewModel {
         ApiClient.guardar(context, u);
 
         Intent intent = new Intent(context, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_TASK_ON_HOME);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         Toast.makeText(context.getApplicationContext(), "Usuario Editado", Toast.LENGTH_SHORT).show();
         context.startActivity(intent);
 

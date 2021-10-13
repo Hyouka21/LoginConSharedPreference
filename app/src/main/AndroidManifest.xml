@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginConSharedPreference">
         <activity
-            android:name=".Registro"
+            android:name=".ui.Editar"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Registro"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

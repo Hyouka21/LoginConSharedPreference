@@ -1,8 +1,10 @@
-package com.sosa.loginconsharedpreference;
+package com.sosa.loginconsharedpreference.request;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.Toast;
+
+import com.sosa.loginconsharedpreference.entidades.Usuario;
 
 public class ApiClient {
     private static SharedPreferences sp;

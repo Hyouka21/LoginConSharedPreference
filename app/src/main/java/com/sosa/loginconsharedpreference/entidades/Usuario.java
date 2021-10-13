@@ -1,4 +1,4 @@
-package com.sosa.loginconsharedpreference;
+package com.sosa.loginconsharedpreference.entidades;
 
 public class Usuario {
     private long dni;

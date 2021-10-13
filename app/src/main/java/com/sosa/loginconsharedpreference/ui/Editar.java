@@ -1,4 +1,4 @@
-package com.sosa.loginconsharedpreference;
+package com.sosa.loginconsharedpreference.ui;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+
+import com.sosa.loginconsharedpreference.R;
+import com.sosa.loginconsharedpreference.entidades.Usuario;
 
 public class Editar extends AppCompatActivity {
     private RegistroViewModel viewModel;
